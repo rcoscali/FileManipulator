@@ -1,0 +1,45 @@
+TranslationUnitDecl 0x55d4c7c80880 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x55d4c7c80e10 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x55d4c7c80af0 '__int128'
+|-TypedefDecl 0x55d4c7c80e80 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x55d4c7c80b10 'unsigned __int128'
+|-TypedefDecl 0x55d4c7c811c8 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x55d4c7c80f70 'struct __NSConstantString_tag'
+|   `-CXXRecord 0x55d4c7c80ed8 '__NSConstantString_tag'
+|-TypedefDecl 0x55d4c7c81260 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x55d4c7c81220 'char *'
+|   `-BuiltinType 0x55d4c7c80910 'char'
+|-TypedefDecl 0x55d4c7cb64a0 <<invalid sloc>> <invalid sloc> implicit referenced __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x55d4c7c81540 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x55d4c7c81350 'struct __va_list_tag'
+|     `-CXXRecord 0x55d4c7c812b8 '__va_list_tag'
+`-LinkageSpecDecl 0x55d4c7cb65d8 </usr/include/x86_64-linux-gnu/sys/cdefs.h:98:24, line:99:22> line:98:31 C
+  |-TypedefDecl 0x55d4c7cb6640 </usr/local/bin/../lib/x86_64-linux-gnu/clang/5.0.0/include/stddef.h:62:1, col:23> col:23 referenced size_t 'unsigned long'
+  | |-IfStmt 0x55d4c7f22df0 <line:557:3, line:561:3>
+  | | |-<<<NULL>>>
+  | | |-<<<NULL>>>
+  | | |-BinaryOperator 0x55d4c7f22b60 <line:557:8, col:27> '_Bool' '=='
+  | | | |-CStyleCastExpr 0x55d4c7f22af8 <col:8, ./Include/GIXConstantes.h:57:26> 'int4':'int' <NoOp>
+  | | | | `-IntegerLiteral 0x55d4c7f22ac8 <col:26> 'int' 0
+  | | | `-ImplicitCastExpr 0x55d4c7f22b48 <GI_Inscriptions/src/GIVTraduireCodops.c:557:27> 'int4':'int' <LValueToRValue>
+  | | |   `-DeclRefExpr 0x55d4c7f22b20 <col:27> 'int4':'int' lvalue Var 0x55d4c7f1fc58 'iCodRet' 'int4':'int'
+  | | |-CompoundStmt 0x55d4c7f22dd0 <line:558:3, line:561:3>
+  | | | `-BinaryOperator 0x55d4c7f22da8 <line:560:5, col:62> 'int4':'int' lvalue '='
+  | | |   |-DeclRefExpr 0x55d4c7f22b88 <col:5> 'int4':'int' lvalue Var 0x55d4c7f1fc58 'iCodRet' 'int4':'int'
+  | | |   `-CallExpr 0x55d4c7f22d20 <col:15, col:62> 'int4':'int'
+  | | |     |-ImplicitCastExpr 0x55d4c7f22d08 <col:15> 'int4 (*)(char, char, char *)' <FunctionToPointerDecay>
+  | | |     | `-DeclRefExpr 0x55d4c7f22c80 <col:15> 'int4 (char, char, char *)' lvalue Function 0x55d4c7f1bce0 'givTradCodopCD' 'int4 (char, char, char *)'
+  | | |     |-ImplicitCastExpr 0x55d4c7f22d60 <col:30> 'char' <LValueToRValue>
+  | | |     | `-DeclRefExpr 0x55d4c7f22c08 <col:30> 'char' lvalue ParmVar 0x55d4c7f1fa88 'acCodecd' 'char'
+  | | |     |-ImplicitCastExpr 0x55d4c7f22d78 <col:40> 'char' <LValueToRValue>
+  | | |     | `-DeclRefExpr 0x55d4c7f22c30 <col:40> 'char' lvalue Var 0x55d4c7f1fce0 'cCodeCD2' 'char'
+  | | |     `-ImplicitCastExpr 0x55d4c7f22d90 <col:50> 'char *' <LValueToRValue>
+  | | |       `-DeclRefExpr 0x55d4c7f22c58 <col:50> 'char *' lvalue ParmVar 0x55d4c7f1fb00 'apcCodecdRes' 'char *'
+  | | `-<<<NULL>>>
+  | `-ReturnStmt 0x55d4c7f22e88 <line:564:3, col:18>
+  |   `-ImplicitCastExpr 0x55d4c7f22e70 <col:10, col:18> 'int4':'int' <LValueToRValue>
+  |     `-ParenExpr 0x55d4c7f22e50 <col:10, col:18> 'int4':'int' lvalue
+  |       `-DeclRefExpr 0x55d4c7f22e28 <col:11> 'int4':'int' lvalue Var 0x55d4c7f1fc58 'iCodRet' 'int4':'int'
+  `-FullComment 0x55d4c7f237b0 <line:538:4, col:96>
+    `-ParagraphComment 0x55d4c7f23780 <col:4, col:96>
+      `-TextComment 0x55d4c7f23750 <col:4, col:96> Text=" 30/06/1999 LGU FT_0074 Traduction d'un code CG et du code CD précédant en un seul code CD "
