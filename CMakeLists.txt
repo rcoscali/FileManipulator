@@ -4,6 +4,9 @@ cmake_minimum_required(VERSION 3.5)
 # Name our project
 project(FileManipulator)
 
+# Define test command
+set(CMAKE_CPPTEST_COMMAND cpptests)
+
 # Create lib target 
 add_library(file_manipulator src/FileManipulator.cpp)
 target_compile_options(file_manipulator PUBLIC "-std=c++11")
@@ -23,3 +26,7 @@ target_include_directories(cpptests PRIVATE googletest/googletest)
 target_include_directories(cpptests PRIVATE src)
 target_include_directories(cpptests SYSTEM BEFORE PRIVATE googletest/googletest/include)
 target_link_libraries(cpptests "file_manipulator;gtestall;pthread")
+add_test(NAME cpptests COMMAND cpptests)
+
+# Add make check target
+add_custom_target(check COMMAND ${CMAKE_CPPTEST_COMMAND})
